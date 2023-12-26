@@ -18,7 +18,7 @@ app.use(express.json());
 //actions
 app.use(`${url}/auth`, authRouter);
 app.use("/", (req, res) => {
-  res.send("hi, from ecommerce");
+  res.send(process.env.API_URL);
 });
 
 //connection
